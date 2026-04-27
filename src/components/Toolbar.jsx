@@ -12,11 +12,8 @@ export default function Toolbar({
     <header className="h-14 flex-shrink-0 flex items-center justify-between px-5 bg-slate-800 border-b border-slate-700 z-10">
       {/* Brand */}
       <div className="flex items-center gap-2.5">
-        <div className="w-7 h-7 bg-indigo-600 rounded-lg flex items-center justify-center text-sm font-bold select-none">
-          ⚡
-        </div>
         <span className="font-semibold text-white text-sm tracking-tight">
-          SupportFlow
+          Support Flow
         </span>
         <span className="text-slate-500 text-sm">/ Visual Builder</span>
       </div>
@@ -43,7 +40,7 @@ export default function Toolbar({
       {/* Mode toggle */}
       <div className="flex items-center gap-3">
         <span className="text-xs text-slate-500 hidden sm:block">
-          {mode === 'editor' ? '✏️ Editor Mode' : '▶ Preview Mode'}
+          {mode === 'editor' ? 'Editor Mode' : 'Preview Mode'}
         </span>
         <button
           onClick={onToggleMode}
@@ -53,7 +50,7 @@ export default function Toolbar({
               : 'bg-slate-600 hover:bg-slate-500 text-white'
           }`}
         >
-          {mode === 'editor' ? '▶  Preview Bot' : '← Back to Editor'}
+          {mode === 'editor' ? 'Preview Bot' : 'Back to Editor'}
         </button>
       </div>
     </header>
